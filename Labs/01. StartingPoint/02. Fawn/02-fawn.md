@@ -33,7 +33,7 @@
     * Log in for remote management from a distant host
     * Serve web content that can be accessed remotely through another host's browser
 
-## FTP Security
+## Securing FTP
 * Users may authenticate themselves with a clear-text sign-in protocol such as username and password
 * Users can connect anonymously with username `anonymous` without having a password if the server is configured for it
 
@@ -44,3 +44,11 @@
 * For secure encrypted transmission, FTP is often secured with SSL/TLS (FTPS) or SSH (SFTP)
 * FTP does not encrypt the traffic sent between client and server
 * Traffic can be intercepted with what is known as a Man-in-the-Middle Attack (MitM), and the contents of the files can be read
+
+<p align="center">
+  <img src="https://github.com/thespcrewroy/HackTheBox/blob/main/assets/sftp.png" alt="Simple Webserver" />
+</p>
+
+
+* Network administrators can wrap the connection with the SSL/TLS protocol or tunnel the FTP connection through SSH to add a layer of encryption that only the source and destination hosts can decrypt to foil most Man-in-the-Middle attacks
+* Port 21 has disappeared, as the FTP protocol gets moved under the SSH protocol on port 22, thus being tunneled through it and secured against any interception.
