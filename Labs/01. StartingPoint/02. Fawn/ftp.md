@@ -4,7 +4,7 @@
 * Client–server model architecture with separate control (port 21) and data (port 20) connections between the client and the server
 
 <p align="center">
-  <img src="https://github.com/thespcrewroy/HackTheBox/blob/main/Notes/assets/client-server-architecture.png" alt="Minimum Spanning Tree Example"  />
+  <img src="https://github.com/thespcrewroy/HackTheBox/blob/main/assets/client-server-architecture.png" alt="Client Server Architecture" />
 </p>
 
 * FTP users may authenticate themselves with a clear-text sign-in protocol, generally in the form of a username and password. However, they can connect anonymously without having a specific password if the server is configured to allow it
