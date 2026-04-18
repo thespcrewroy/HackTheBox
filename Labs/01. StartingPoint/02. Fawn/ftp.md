@@ -8,7 +8,8 @@
   <img src="https://github.com/thespcrewroy/HackTheBox/blob/main/assets/client-server-architecture.png" alt="Client Server Architecture" />
 </p>
 
-* Client–server model architecture with separate control (port 21) and data (port 20) connections between the client and the server
+> Client–server model architecture with separate control (port 21) and data (port 20) connections between the client and the server
+
 * Users may authenticate themselves with a clear-text sign-in protocol, however, they can connect anonymously without having a specifed password if the server is configured to allow it
 * For secure transmission that protects the username and password and encrypts the content, FTP is often secured with SSL/TLS (FTPS) or replaced with SSH File Transfer Protocol (SFTP).
 * Can be easily misconfigured if not correctly understood
@@ -20,13 +21,14 @@
 
 ## Open Ports
 * A port running an active service is a reserved space for the IP address of the target server to receive requests and send results from
-* Ports are necessary because if we only had IP addresses or hostnames, then the hosts could only perform one service per IP address at a time.
+* Ports are necessary because if we only had IP addresses or hostnames, then the hosts could only perform one service per IP address
+* By having ports, you can have one IP address handling multiple services simeoultaneously
+* Thus, the purpose of ports is to add a layer of distinction
 
 <p align="center">
   <img src="https://github.com/thespcrewroy/HackTheBox/blob/main/assets/simple-webserver.png" alt="Simple Webserver" />
 </p>
 
-* By having ports, you can have one IP address handling multiple services, as it adds another layer of distinction.
 * A rudimentary core web server configuration sets up FTP, SSH, and HTTP can:
     * Receive and send files that can be used to configure the webserver
     * Receive and send server logs to an external source
