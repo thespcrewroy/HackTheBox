@@ -10,8 +10,6 @@
 
 > Client–server model architecture with separate control (port 21) and data (port 20) connections between the client and the server
 
-* Users may authenticate themselves with a clear-text sign-in protocol, however, they can connect anonymously without having a specifed password if the server is configured to allow it
-* For secure transmission that protects the username and password and encrypts the content, FTP is often secured with SSL/TLS (FTPS) or replaced with SSH File Transfer Protocol (SFTP).
 * Can be easily misconfigured if not correctly understood
 * Can be used to transfer log files from one network device to another or to a log collection server
 * An employee of the client company might want to bypass file checks or firewall rules for transferring a file from themselves to their peers. Thus, security professionals must consider the many different mechanisms for controlling and monitoring data flow within an enterprise network today
@@ -34,3 +32,10 @@
     * Receive and send server logs to an external source
     * Log in for remote management from a distant host
     * Serve web content that can be accessed remotely through another host's browser
+
+## FTP Security
+* Users may authenticate themselves with a clear-text sign-in protocol such as username and password
+* Users  they can connect anonymously with username `anonymous` without having a specifed password if the server is configured to allow it
+* For secure transmission that protects the username and password and encrypts the content, FTP is often secured with SSL/TLS (FTPS) or SSH (SFTP).
+* FTP by itself does have the ability to require credentials before allowing access to the stored files. However, it does not encrypt the traffic sent between client and server
+* Traffic can be intercepted with what is known as a Man-in-the-Middle Attack (MitM), and the  contents of the files can be read in plaintext.
