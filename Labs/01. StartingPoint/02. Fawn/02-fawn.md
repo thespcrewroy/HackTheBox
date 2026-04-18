@@ -42,5 +42,5 @@
 </p>
 
 * For secure encrypted transmission, FTP is often secured with SSL/TLS (FTPS) or SSH (SFTP)
-* FTP by itself does have the ability to require credentials before allowing access to the stored files. However, it does not encrypt the traffic sent between client and server
+* FTP does not encrypt the traffic sent between client and server
 * Traffic can be intercepted with what is known as a Man-in-the-Middle Attack (MitM), and the contents of the files can be read
