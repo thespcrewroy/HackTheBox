@@ -1,7 +1,7 @@
 # FTP
 
 * **File Transfer Protocol (FTP)**: a native communication protocol to all host operating systems and used for a long time for simple file transfer tasks, be they automated or manual. Used to transfer files from a server to client on a computer network.
-* Built on the client–server model architecture using separate control (port 21) and data (port 20) connections between the client and the server
+* Uses client–server model architecture using separate control (port 21) and data (port 20) connections between the client and the server
 * FTP users may authenticate themselves with a clear-text sign-in protocol, generally in the form of a username and password. However, they can connect anonymously without having a specific password if the server is configured to allow it
 * For secure transmission that protects the username and password and encrypts the content, FTP is often secured with SSL/TLS (FTPS) or replaced with SSH File Transfer Protocol (SFTP).
 * FTP can be easily misconfigured if not correctly understood
